@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/Proyecto11.lista_de_personajes/img/047291f1be67fd46dc7cbed02e338053.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+  font-family: "Wittgenstein", sans-serif;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+section::before,
+section::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: rgba(58, 34, 34, 0.1);
+  filter: blur(150px);
+  z-index: 1;
+}
+
+section::before {
+  transform: translate(-250px, -120px);
+}
+
+section::after {
+  transform: translate(250px, 150px);
+}
+
+.box {
+  position: relative;
+  min-width: 350px;
+  min-height: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  z-index: 10;
+  padding: 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.list {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.list:hover {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1000;
+}
+
+.imgbx {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.rank {
+  position: absolute;
+  right: -50px;
+  color: #03a9f4;
+  font-size: 2em;
+  transition: right 0.5s ease, color 0.5s ease;
+}
+
+.rank small {
+  font-weight: 500;
+  opacity: 0.25;
+}
+
+.list:hover .rank {
+  right: 20px;
+  color: #f6f6f6;
+}
+
+h4 {
+  line-height: 1.2em;
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: color 0.5s ease;
+}
+
+.list:hover h4 {
+  color: #000;
+}
+
+p {
+  font-size: 0.9em;
+  transition: color 0.5s ease;
+}
+
+.list:hover p {
+  color: #171010;
+}/*# sourceMappingURL=Style.css.map */
